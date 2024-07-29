@@ -1,0 +1,19 @@
+1. Understand Asymptotic Notation
+Big O Notation:
+
+Definition: Big O notation describes the upper bound of an algorithm's time complexity. It expresses the maximum amount of time an algorithm will take in the worst-case scenario as a function of the size of the input data.
+Purpose: It helps to evaluate and compare the efficiency of different algorithms, particularly how they scale with increasing input sizes.
+Search Operation Scenarios:
+
+Best Case:
+
+Linear Search: O(1) if the desired element is the first one in the list.
+Binary Search: O(1) if the desired element is exactly at the middle of the array.
+Average Case:
+
+Linear Search: O(n) where n is the number of elements. On average, it will check half of the elements.
+Binary Search: O(log n) due to halving the search space with each comparison.
+Worst Case:
+
+Linear Search: O(n) where n is the number of elements. It may need to check all elements if the target is not present.
+Binary Search: O(log n) where n is the number of elements. It will always perform at most log2(n) comparisons.

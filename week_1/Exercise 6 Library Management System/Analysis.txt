@@ -1,0 +1,13 @@
+Analysis
+Time Complexity Comparison:
+
+Linear Search:
+
+Best Case: O(1) (if the book is the first in the list).
+Worst Case: O(n) (if the book is at the end or not present).
+Average Case: O(n) due to potentially having to examine every book.
+Binary Search:
+
+Best Case: O(1) (if the book is at the middle of the list).
+Worst Case: O(log n) (as the search space is halved each time).
+Average Case: O(log n) due to halving the search space each iteration.

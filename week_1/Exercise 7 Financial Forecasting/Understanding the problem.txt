@@ -1,0 +1,7 @@
+Understand Recursive Algorithms
+Concept of Recursion:
+
+Definition: Recursion is a method of solving problems where a function calls itself as a subroutine. This allows the problem to be broken down into smaller, more manageable sub-problems.
+Base Case: The simplest instance of the problem, which can be solved directly.
+Recursive Case: The instance of the problem that reduces the problem size and calls the function itself.
+Benefits: Recursion can simplify code for problems that have a recursive structure (e.g., tree traversal, divide-and-conquer algorithms).

@@ -1,0 +1,79 @@
+import java.util.ArrayList;
+
+public class LibraryManagement {
+    private ArrayList<Book> books;
+
+    public LibraryManagement() {
+        this.books = new ArrayList<>();
+    }
+
+    // Add a book to the library
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
+    // Linear search for a book by title
+    public Book linearSearchByTitle(String title) {
+        for (Book book : books) {
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                return book;
+            }
+        }
+        return null; // Book not found
+    }
+
+    // Binary search for a book by title (requires sorted list)
+    public Book binarySearchByTitle(String title) {
+        int low = 0;
+        int high = books.size() - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            int cmp = title.compareToIgnoreCase(books.get(mid).getTitle());
+
+            if (cmp == 0) {
+                return books.get(mid);
+            } else if (cmp < 0) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return null; // Book not found
+    }
+
+    // Sort the books by title for binary search
+    public void sortBooksByTitle() {
+        books.sort((b1, b2) -> b1.getTitle().compareToIgnoreCase(b2.getTitle()));
+    }
+
+    public static void main(String[] args) {
+        LibraryManagement library = new LibraryManagement();
+
+        // Add books to the library
+        library.addBook(new Book("001", "Java Programming", "John Doe"));
+        library.addBook(new Book("002", "Data Structures", "Jane Smith"));
+        library.addBook(new Book("003", "Algorithms", "Alice Johnson"));
+
+        // Sort books by title for binary search
+        library.sortBooksByTitle();
+
+        // Linear search example
+        System.out.println("Linear Search Result:");
+        Book book1 = library.linearSearchByTitle("Data Structures");
+        if (book1 != null) {
+            System.out.println(book1);
+        } else {
+            System.out.println("Book not found.");
+        }
+
+        // Binary search example
+        System.out.println("\nBinary Search Result:");
+        Book book2 = library.binarySearchByTitle("Algorithms");
+        if (book2 != null) {
+            System.out.println(book2);
+        } else {
+            System.out.println("Book not found.");
+        }
+    }
+}

@@ -1,0 +1,92 @@
+public class EmployeeManagement {
+    private Employee[] employees;
+    private int size;
+    private static final int INITIAL_CAPACITY = 10;
+
+    public EmployeeManagement() {
+        employees = new Employee[INITIAL_CAPACITY];
+        size = 0;
+    }
+
+    // Add an employee to the array
+    public void addEmployee(Employee employee) {
+        if (size >= employees.length) {
+            resizeArray();
+        }
+        employees[size++] = employee;
+    }
+
+    // Search for an employee by employeeId
+    public Employee searchEmployee(String employeeId) {
+        for (int i = 0; i < size; i++) {
+            if (employees[i].getEmployeeId().equals(employeeId)) {
+                return employees[i];
+            }
+        }
+        return null; // Employee not found
+    }
+
+    // Traverse and print all employees
+    public void traverseEmployees() {
+        for (int i = 0; i < size; i++) {
+            System.out.println(employees[i]);
+        }
+    }
+
+    // Delete an employee by employeeId
+    public boolean deleteEmployee(String employeeId) {
+        for (int i = 0; i < size; i++) {
+            if (employees[i].getEmployeeId().equals(employeeId)) {
+                // Shift elements to fill the gap
+                for (int j = i; j < size - 1; j++) {
+                    employees[j] = employees[j + 1];
+                }
+                employees[--size] = null; // Clear the last element
+                return true; // Employee deleted
+            }
+        }
+        return false; // Employee not found
+    }
+
+    // Resize the array when needed
+    private void resizeArray() {
+        Employee[] newArray = new Employee[employees.length * 2];
+        System.arraycopy(employees, 0, newArray, 0, employees.length);
+        employees = newArray;
+    }
+
+    public static void main(String[] args) {
+        EmployeeManagement em = new EmployeeManagement();
+
+        // Add employees
+        em.addEmployee(new Employee("001", "Alice", "Developer", 80000));
+        em.addEmployee(new Employee("002", "Bob", "Manager", 90000));
+        em.addEmployee(new Employee("003", "Charlie", "Analyst", 70000));
+
+        // Traverse employees
+        System.out.println("All Employees:");
+        em.traverseEmployees();
+
+        // Search for an employee
+        System.out.println("\nSearching for employee with ID 002:");
+        Employee employee = em.searchEmployee("002");
+        if (employee != null) {
+            System.out.println(employee);
+        } else {
+            System.out.println("Employee not found.");
+        }
+
+        // Delete an employee
+        System.out.println("\nDeleting employee with ID 002:");
+        boolean deleted = em.deleteEmployee("002");
+        if (deleted) {
+            System.out.println("Employee deleted.");
+        } else {
+            System.out.println("Employee not found.");
+        }
+
+        // Traverse employees after deletion
+        System.out.println("\nEmployees After Deletion:");
+        em.traverseEmployees();
+    }
+}
