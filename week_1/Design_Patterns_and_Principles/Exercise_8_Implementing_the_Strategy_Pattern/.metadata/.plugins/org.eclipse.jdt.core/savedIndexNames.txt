@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\Personal-Documents\cognizant_digital_nurture\week_1\Design_Patterns_and_Principles\Exercise_8_Implementing_the_Strategy_Pattern\.metadata\.plugins\org.eclipse.jdt.core
+1258494689.index
+3546885175.index
+1865797976.index

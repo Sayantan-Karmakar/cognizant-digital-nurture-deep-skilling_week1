@@ -1,0 +1,12 @@
+
+public abstract class NotifierDecorator implements Notifier{
+	protected Notifier notifier;
+	public NotifierDecorator(Notifier notifier) {
+		// TODO Auto-generated constructor stub
+		this.notifier = notifier;
+	}
+	@Override
+	public void send(String str) {
+		notifier.send(str);
+	}
+}

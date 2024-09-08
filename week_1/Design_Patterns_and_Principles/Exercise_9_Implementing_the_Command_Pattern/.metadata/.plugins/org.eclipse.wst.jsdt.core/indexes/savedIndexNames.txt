@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+D:\Personal-Documents\cognizant_digital_nurture\week_1\Design_Patterns_and_Principles\Exercise_9_Implementing_the_Command_Pattern\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

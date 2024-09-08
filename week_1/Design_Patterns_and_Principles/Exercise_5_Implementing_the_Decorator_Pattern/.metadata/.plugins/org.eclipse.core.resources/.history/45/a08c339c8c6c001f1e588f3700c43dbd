@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "This is a message";
+		Notifier emailnotifier = new EmailNotifier();
+		//Notifier smsnotifier = new SMSNotifierDecorator(emailnotifier);
+		Notifier slacknotifier = new SlackNotifierDecorator(emailnotifier);
+		slacknotifier.send(str);
+	}
+
+}

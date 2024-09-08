@@ -1,0 +1,11 @@
+
+public class SMSNotifierDecorator extends NotifierDecorator{
+
+	@Override
+	public void send() {
+		// TODO Auto-generated method stub
+		System.out.println("Notifies via SMS");
+		
+	}
+
+}

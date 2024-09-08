@@ -1,0 +1,10 @@
+
+public class SlackNotifierDecorator extends NotifierDecorator{
+
+	@Override
+	public void send() {
+		// TODO Auto-generated method stub
+		System.out.println("Notifies via Slack");
+	}
+
+}

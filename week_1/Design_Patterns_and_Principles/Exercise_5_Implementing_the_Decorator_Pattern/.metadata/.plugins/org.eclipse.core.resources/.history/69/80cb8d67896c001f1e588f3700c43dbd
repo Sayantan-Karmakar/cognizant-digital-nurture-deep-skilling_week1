@@ -1,0 +1,13 @@
+
+public class EmailNotifier implements Notifier{
+
+	@Override
+	public String send(String str) {
+		// TODO Auto-generated method stub
+		return "Notifies via Email: "+str;
+	}
+	public double cost(double cost) {
+		return 10.0;
+	}
+
+}

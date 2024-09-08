@@ -1,0 +1,16 @@
+
+public class Logger {
+	private static Logger obj;
+	private Logger(){
+		
+	}
+	public static Logger getInstance() {
+		if(obj==null) {
+			new Logger();
+		}
+		return obj;
+	}
+	public void show(String str) {
+		System.out.println(str);
+	}
+}

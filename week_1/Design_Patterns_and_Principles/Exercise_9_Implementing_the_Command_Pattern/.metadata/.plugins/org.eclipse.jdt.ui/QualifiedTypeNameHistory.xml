@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Command"/>
+    <fullyQualifiedTypeName name="LightOffCommand"/>
+    <fullyQualifiedTypeName name="RemoteControl"/>
+    <fullyQualifiedTypeName name="LightOnCommand"/>
+</qualifiedTypeNameHistroy>

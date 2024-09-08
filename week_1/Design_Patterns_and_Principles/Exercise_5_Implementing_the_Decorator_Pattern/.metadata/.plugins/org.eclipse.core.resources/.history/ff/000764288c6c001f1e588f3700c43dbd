@@ -1,0 +1,20 @@
+
+public class SlackNotifierDecorator extends NotifierDecorator{
+
+	public SlackNotifierDecorator(Notifier notifier) {
+		super(notifier);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String send(String str) {
+		// TODO Auto-generated method stub
+		super.send(str);
+		return ("Notifies via Slack: "+str);
+	}
+	
+	public double cost(double c) {
+		super.cost(c+30.0);
+		return (c+30.0);
+	}
+}

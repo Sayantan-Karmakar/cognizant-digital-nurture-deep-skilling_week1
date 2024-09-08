@@ -1,0 +1,10 @@
+
+public class StudentController {
+	Student student = new Student();
+	StudentView studentview = new StudentView();
+	public void updateStudentDetails(String name, int id, char grade) {
+		student.setName(name);
+		student.setId(id);
+		student.setGrade(grade);
+	}
+}

@@ -1,0 +1,26 @@
+Time Complexity:
+
+Add Product:
+
+HashMap: O(1) average case, O(n) worst case due to hash collisions.
+Array/List: O(n) due to the need to check for duplicates and find the correct position.
+Update Product:
+
+HashMap: O(1) average case for lookup and update.
+Array/List: O(n) for search and update.
+Delete Product:
+
+HashMap: O(1) average case for lookup and deletion.
+Array/List: O(n) for search and deletion.
+Optimization Considerations:
+
+HashMap Optimization:
+
+Use a good hash function to reduce collisions.
+Resize the hash table as needed to maintain efficient operations.
+Memory Usage:
+
+Be mindful of the trade-off between time complexity and memory usage. HashMap uses more memory due to its underlying hash table.
+Alternative Data Structures:
+
+For very large datasets or specific needs (e.g., sorted data), consider using balanced trees or other specialized data structures.

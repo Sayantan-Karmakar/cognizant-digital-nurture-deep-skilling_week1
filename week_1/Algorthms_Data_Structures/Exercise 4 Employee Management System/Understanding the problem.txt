@@ -1,0 +1,10 @@
+Understand Array Representation
+Array Representation in Memory:
+
+Memory Layout: Arrays are stored in contiguous memory locations. Each element of the array is placed right next to the previous one. This means that accessing any element in the array can be done in constant time (O(1)) because the position of each element can be computed directly.
+
+Advantages:
+
+Direct Access: Provides O(1) time complexity for accessing elements by index.
+Simple Structure: Arrays are straightforward to implement and use.
+Cache Friendly: Due to contiguous memory storage, arrays benefit from spatial locality, which can improve cache performance.

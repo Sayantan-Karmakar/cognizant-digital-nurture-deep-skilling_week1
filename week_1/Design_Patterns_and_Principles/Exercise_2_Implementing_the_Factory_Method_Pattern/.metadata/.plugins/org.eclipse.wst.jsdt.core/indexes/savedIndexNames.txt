@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\Personal-Documents\cognizant_digital_nurture\week_1\Design_Patterns_and_Principles\Exercise_2_Implementing_the_Factory_Method_Pattern\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3935856848.index

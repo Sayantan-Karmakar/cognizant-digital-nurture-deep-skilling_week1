@@ -1,0 +1,2 @@
+Create a new project directory named InventoryManagementSystem.
+Inside this directory, create a new file inventory_management.py for your implementation.

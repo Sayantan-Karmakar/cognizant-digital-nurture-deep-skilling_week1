@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Personal-Documents\cognizant_digital_nurture\week_1\Design_Patterns_and_Principles\Exercise_3_Implementing_the_Builder_Pattern\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2365728221.index
+1264910390.index
+4107530036.index
+196924275.index
+3770656089.index
+3355710798.index

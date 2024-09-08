@@ -1,0 +1,11 @@
+
+public class WordDocument implements Document {
+
+	@Override
+	public void NewDocu() {
+		// TODO Auto-generated method stub
+		System.out.println("Create Word Document");
+		
+	}
+
+}

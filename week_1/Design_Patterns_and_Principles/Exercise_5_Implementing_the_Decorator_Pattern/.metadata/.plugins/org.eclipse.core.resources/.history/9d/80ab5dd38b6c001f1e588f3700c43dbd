@@ -1,0 +1,21 @@
+
+public class SMSNotifierDecorator extends NotifierDecorator{
+
+	public SMSNotifierDecorator(Notifier notifier) {
+		super(notifier);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	@Override
+	public String send(String str) {
+		// TODO Auto-generated method stub
+		super.send(str);
+		return ("Notifies via SMS: "+str);
+	}
+	public double cost(double c) {
+		super.cost(c+20.0);
+		return c+20.0;
+	}
+
+}

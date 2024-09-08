@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StockMarket stockmarket = new StockMarket();
+		MobileApp user1 = new MobileApp();
+		MobileApp user2 = new MobileApp();
+		WebApp user3 = new WebApp();
+		WebApp user4 = new WebApp();
+		
+		stockmarket.register(user1);
+		stockmarket.register(user2);
+		stockmarket.register(user3);
+		stockmarket.register(user4);
+		
+		stockmarket.deregister(user3);
+		
+		stockmarket.notifyobserver("Stock Price goes high");
+	}
+
+}

@@ -1,0 +1,13 @@
+Understand Linked Lists
+Types of Linked Lists:
+
+Singly Linked List:
+
+Structure: Each node contains data and a reference (or link) to the next node in the sequence.
+Traversal: You can only traverse in one direction, from the head to the tail.
+Operations: Easy to implement insertion and deletion operations at the head or tail, but deletion in the middle requires traversal from the head.
+Doubly Linked List:
+
+Structure: Each node contains data, a reference to the next node, and a reference to the previous node.
+Traversal: Allows traversal in both directions, forward and backward.
+Operations: More complex due to the need to maintain two references, but it allows more efficient insertion and deletion operations at both ends of the list and from the middle.

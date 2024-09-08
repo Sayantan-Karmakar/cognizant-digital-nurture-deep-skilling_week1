@@ -1,0 +1,10 @@
+
+public class EmailNotifier implements Notifier{
+
+	@Override
+	public void send(String str) {
+		// TODO Auto-generated method stub
+		System.out.println("Notifies via Email: "+str);
+	}
+
+}

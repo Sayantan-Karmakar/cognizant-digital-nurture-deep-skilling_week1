@@ -1,0 +1,13 @@
+
+public class MobileApp implements Observer{
+	
+	@Override
+	public void update(String str, double price) {
+		// TODO Auto-generated method stub
+		System.out.println("Stock: "+str+" Price: "+price+" informed via mobile application");
+		
+	}
+
+
+
+}

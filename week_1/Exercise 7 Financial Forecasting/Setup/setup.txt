@@ -1,9 +1,0 @@
-Future Value Calculation Using Recursion:
-
-We want to calculate the future value of an investment given a growth rate over a number of periods. The future value can be defined recursively as:
-
-Future Value
-(𝑛)=Current Value×(1+Growth Rate)𝑛Future Value(n)=Current Value×(1+Growth Rate) n
- 
-
-Here, n is the number of periods.

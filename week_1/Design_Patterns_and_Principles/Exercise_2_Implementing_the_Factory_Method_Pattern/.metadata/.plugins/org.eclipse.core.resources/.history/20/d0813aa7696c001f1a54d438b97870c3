@@ -1,0 +1,11 @@
+
+public class PdfDocument implements Document {
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		System.out.println("Show Word Document");
+		
+	}
+
+}

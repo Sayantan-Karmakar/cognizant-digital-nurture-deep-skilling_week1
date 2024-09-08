@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class StockMarket implements Stock{
+	
+	List<Observer> users = new ArrayList<>();
+	
+	@Override
+	public void register(Observer ob) {
+		// TODO Auto-generated method stub
+		users.add(null)
+		
+	}
+
+	@Override
+	public void deregister() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifyobserver() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
